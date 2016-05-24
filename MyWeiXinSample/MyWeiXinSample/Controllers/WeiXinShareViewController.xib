@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9531" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="WeiXinShareViewController">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1qH-Tw-lHv">
+                    <rect key="frame" x="80" y="44" width="440" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="NLd-5K-YIU"/>
+                    </constraints>
+                    <state key="normal" title="分享文字"/>
+                    <connections>
+                        <action selector="TextAction:" destination="-1" eventType="touchUpInside" id="GRk-CU-QKG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5Q7-9D-tNQ">
+                    <rect key="frame" x="80" y="93" width="440" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="分享链接"/>
+                    <connections>
+                        <action selector="LinkAction:" destination="-1" eventType="touchUpInside" id="Hb8-DS-nuB"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NL0-jw-y9n">
+                    <rect key="frame" x="80" y="142" width="440" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="分享图片"/>
+                    <connections>
+                        <action selector="ImageAction:" destination="-1" eventType="touchUpInside" id="bdy-gb-pM4"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lFR-Y8-J84">
+                    <rect key="frame" x="80" y="191" width="440" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="分享音乐"/>
+                    <connections>
+                        <action selector="MusicAction:" destination="-1" eventType="touchUpInside" id="jof-Ya-I9k"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hRe-bj-K87">
+                    <rect key="frame" x="80" y="240" width="440" height="44"/>
+                    <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                    <state key="normal" title="分享视频"/>
+                    <connections>
+                        <action selector="VideoActon:" destination="-1" eventType="touchUpInside" id="gCf-eh-cvk"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="NL0-jw-y9n" firstAttribute="width" secondItem="5Q7-9D-tNQ" secondAttribute="width" id="4gq-bh-iGW"/>
+                <constraint firstItem="5Q7-9D-tNQ" firstAttribute="centerX" secondItem="1qH-Tw-lHv" secondAttribute="centerX" id="71c-ZA-lm3"/>
+                <constraint firstItem="hRe-bj-K87" firstAttribute="height" secondItem="lFR-Y8-J84" secondAttribute="height" id="7XX-w7-CGm"/>
+                <constraint firstItem="NL0-jw-y9n" firstAttribute="centerX" secondItem="5Q7-9D-tNQ" secondAttribute="centerX" id="ASc-cY-5JI"/>
+                <constraint firstAttribute="trailing" secondItem="1qH-Tw-lHv" secondAttribute="trailing" constant="80" id="CfJ-oU-00i"/>
+                <constraint firstItem="lFR-Y8-J84" firstAttribute="centerX" secondItem="NL0-jw-y9n" secondAttribute="centerX" id="Kzx-JU-I8W"/>
+                <constraint firstItem="5Q7-9D-tNQ" firstAttribute="top" secondItem="1qH-Tw-lHv" secondAttribute="bottom" constant="5" id="Nnz-SB-NBJ"/>
+                <constraint firstItem="5Q7-9D-tNQ" firstAttribute="width" secondItem="1qH-Tw-lHv" secondAttribute="width" id="ScH-F0-9SC"/>
+                <constraint firstItem="1qH-Tw-lHv" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="44" id="U4L-ey-MVz"/>
+                <constraint firstItem="5Q7-9D-tNQ" firstAttribute="height" secondItem="1qH-Tw-lHv" secondAttribute="height" id="YQC-Ag-tjk"/>
+                <constraint firstItem="lFR-Y8-J84" firstAttribute="top" secondItem="NL0-jw-y9n" secondAttribute="bottom" constant="5" id="Ytm-3L-RMq"/>
+                <constraint firstItem="hRe-bj-K87" firstAttribute="width" secondItem="lFR-Y8-J84" secondAttribute="width" id="gA1-lO-grF"/>
+                <constraint firstItem="lFR-Y8-J84" firstAttribute="width" secondItem="NL0-jw-y9n" secondAttribute="width" id="kWO-Q0-sSz"/>
+                <constraint firstItem="1qH-Tw-lHv" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="80" id="nXQ-C4-wcz"/>
+                <constraint firstItem="hRe-bj-K87" firstAttribute="centerX" secondItem="lFR-Y8-J84" secondAttribute="centerX" id="pQw-Kt-BBo"/>
+                <constraint firstItem="NL0-jw-y9n" firstAttribute="height" secondItem="5Q7-9D-tNQ" secondAttribute="height" id="qeT-Xa-AEH"/>
+                <constraint firstItem="lFR-Y8-J84" firstAttribute="height" secondItem="NL0-jw-y9n" secondAttribute="height" id="tEC-LZ-wwD"/>
+                <constraint firstItem="hRe-bj-K87" firstAttribute="top" secondItem="lFR-Y8-J84" secondAttribute="bottom" constant="5" id="z74-Us-16v"/>
+                <constraint firstItem="NL0-jw-y9n" firstAttribute="top" secondItem="5Q7-9D-tNQ" secondAttribute="bottom" constant="5" id="zmh-6h-Icd"/>
+            </constraints>
+            <point key="canvasLocation" x="513" y="355"/>
+        </view>
+    </objects>
+</document>
